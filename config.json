@@ -1,0 +1,38 @@
+{
+    "cdk_pipeline": {
+        "pipeline_name": "[PIPELINE NAME]",
+        "repository_name": "[GITHUB REPO NAME]",
+        "repository_owner": "[REPO OWNER]",
+        "branch": "[main / master BRANCH]",
+        "build_environment": {
+            "account": "[AWS ACCOUNT NUMBER]",
+            "region": "[REGION]"
+        }
+    },
+    "environments": {
+        "dev": {
+            "name": "dev",
+            "account": {
+                "account": "[AWS ACCOUNT NUMBER]",
+                "region": "[REGION]"
+            },
+            "env": {}
+        },
+        "test": {
+            "name": "test",
+            "account": {
+                "account": "[AWS ACCOUNT NUMBER]",
+                "region": "[REGION]"
+            },
+            "env": {}
+        },
+        "prod": {
+            "name": "Prod",
+            "account": {
+                "account": "[AWS ACCOUNT NUMBER]",
+                "region": "[REGION]"
+            },
+            "env": {}
+        }
+    }
+}
